@@ -1,0 +1,135 @@
+%%%% Draft paper %%%%
+% Title:
+%  - (...)
+%
+% Authors: 
+%  - Ingo Gerth (template author)
+%
+% Contact: 
+%  - ingo@gerth-ac.de, (...)
+%
+% VCS repository:
+%  - (if applicable)
+%
+% Compiling:
+%  - Make sure the files are encoded as UTF8
+%  - Use pdflatex for compiling,
+%    bibtex for bibliography, makeindex for nomenclature
+%  - Note: If you know what you are doing, preferably use lualatex as compiler
+%    and uncomment the relevant packages in Preamble.tex. For questions, contact
+%    the author.
+%
+% To execute AIAA old-school nomenclature run:
+%  - makeindex -s nomencl.ist -o advanced_example.gls advanced_example.glo
+%
+% General note:
+%  - Original AIAA template is *very* out-dated. Updated with recent packages
+%  - .PDF upload is allowed for conferences, so no problem there
+%
+\documentclass[%
+    % draft,     % mostly for faster compilation
+    % handcarry, % adds conference name, date, etc. to paper (don't use by default)
+    % submit,    % AIAA option, increases line space and font size
+]{aiaa-tc}
+
+\input{Preamble.tex}
+
+
+\title{Your Title}
+
+\author{
+ Ingo Gerth\thanks{%
+     Graduate student, Section of Astrodynamics and
+     Space Missions. AIAA student member.%
+     % Intern at ESA ESTEC, D/HSO-IL (Lunar Lander Office). 
+     %
+ }
+ \ and Erwin Mooij\thanks{Assistant professor, Section of Astrodynamics and Space Missions. Associate
+     Fellow, AIAA.}\\
+ {\normalsize\itshape
+  Delft University of Technology, Delft, The Netherlands, 2629\,HS}
+}
+
+\AIAAsubmitinfo{PAPER TITLE, AUTHOR LAST NAME and CO-AUTHOR LAST NAME}
+
+% Data used by 'handcarry' option
+\AIAApapernumber{YEAR-NUMBER}
+\AIAAconference{Conference Name, Date, and Location}
+\AIAAcopyright{\AIAAcopyrightD{YEAR}}
+
+% Define commands to assure consistent treatment throughout document
+\newcommand{\eqnref}[1]{(\ref{#1})}
+\newcommand{\class}[1]{\texttt{#1}}
+\newcommand{\package}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{#1}}
+\newcommand{\BibTeX}{\textsc{Bib}\TeX}
+
+\begin{document}
+
+%% AIAA style guidelines
+
+% Notations (see author_guide.pdf)
+% --------------------------------
+% Use "figure", "table" (small, written out)
+% Table caption on top, figure below
+% For citations, use Ref.~1 (inconsistent with above, but oh well...)
+% For equations, use Eq.~1 (again, inconsistent...... well well well.)
+% At beginning of sentence write out, e.g., Equation~1, Reference~1
+% Express ranges with "to", eg. Eqs.~1 to~3.
+% Put "periods and commas in quotation marks," but "exclamations not"!
+% Use listings as this, that, and that (serial comma)
+% If number of authors >= 6, say et al. in bibliography
+% Label for sub floats: a), b), etc.
+% For figure axes, use words
+
+% Remarks on style (see author_guide.pdf)
+% ---------------------------------------
+% Use micrometer, not micron
+% Graph within a graph is an inset, not insert
+% Use alternatively, not alternately (unless something alternates)
+% Whereas instead of while (unless referring to simultaneous events)
+% Do not use essentially to mean approximately or effectively
+% Do not use issue for euphemism of problem
+% Data is plural, e.g., "data are" not "data is"
+% Join prefixes such as non, sub, micro, multi, ultra with word, "submillimeter"
+% Do not italicize i.e., e.g.
+% Acknowledgment (without e after g, US style)
+
+\maketitle
+
+\begin{abstract}
+    (Your abstract)
+\end{abstract}
+
+\printnomenclature
+
+\section{Introduction}
+
+\lettrine{T}{\textsc{his}} is how you work with the file. Add lettrines to
+beginnings of sections. Units work like this \SI{13.3}{km}, unit-less numbers
+like this \num{12991.91241} or this \num{1.098118e-8}, and angles like this
+\ang{1.781}. Put citations only after dots or commas, like
+this.\cite{Acikmese2008}
+
+
+\section{Conclusions and Future Work}
+
+This should get you started. When using in-line citations use
+Ref.~\citen{Acikmese2008}. Note that the tilde $\sim$ is used as protected
+space.
+
+
+\section*{Acknowledgments}
+
+Ingo Gerth would like extend his gratitude to the easter bunny for all the
+strong support on creating this wonderful template. Thanks so much.
+
+
+%% Bibliography
+\bibliography{bibtex_database}
+\bibliographystyle{aiaa}
+
+
+\end{document}
+
+% - Release $Name:  $ -
