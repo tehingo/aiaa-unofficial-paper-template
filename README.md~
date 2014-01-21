@@ -35,11 +35,13 @@ have found main-stream application, they will be incorporated into the template:
 
 
 ## Requirements:
- * A recent LaTeX distribution, such as [TeXLive](http://www.tug.org/texlive/)
+ * A recent LaTeX distribution, such as [TeX Live](http://www.tug.org/texlive/)
 
 
 ## Notice:
-This template comes with absolutely no warranty. Check compliance with
+This template comes with absolutely no warranty. This is not the official AIAA paper template,
+and I claim no ownership of it. This template is merely a re-packaged unofficial
+template, with minor modificaitions to modernize the original framework. Check compliance with
 the AIAA submission requirements yourself.
 
 

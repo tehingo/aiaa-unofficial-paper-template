@@ -38,11 +38,6 @@ have found main-stream application, they will be incorporated into the template:
  * A recent LaTeX distribution, such as [TeX Live](http://www.tug.org/texlive/)
 
 
-## Notice:
-This template comes with absolutely no warranty. Check compliance with
-the AIAA submission requirements yourself.
-
-
 ## License:
 [LaTeX Project Public License](http://latex-project.org/lppl/):
    Copyright © 2014 Ingo Gerth
@@ -58,4 +53,11 @@ the AIAA submission requirements yourself.
    This work has the LPPL maintenance status 'maintained'.
    
    The Current Maintainer of this work is Ingo Gerth.
+
+
+## Notice:
+This template comes with absolutely no warranty. This is not the official AIAA paper template,
+and I claim no ownership of it. This template is merely a re-packaged unofficial
+template, with minor modificaitions to modernize the original framework. Check compliance with
+the AIAA submission requirements yourself.
 
