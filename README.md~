@@ -1,9 +1,10 @@
-# Unofficial AIAA paper template
+# Unofficial updated AIAA paper template
 
 ## About the template:
 The American Institute of Aeronautics and Astronautics (AIAA) provides a 
 LaTeX template for the conference and journal papers on [its website](https://www.aiaa.org/secondary.aspx?id=4597). Unfortuntaely, this template still loads long outdated
-packages, that are now obsolete. For details, see 'Preamble.tex' of this bundle.
+packages, that are now obsolete—it was last updated in 2004.
+For detailed info on the changes of this updated template, see 'Preamble.tex' of this bundle.
 
 This template is an attempt at providing an updated version of the original
 AIAA template. The class file remains unchanged, so your resulting file will still
@@ -44,7 +45,7 @@ the AIAA submission requirements yourself.
 
 ## License:
 [LaTeX Project Public License](http://latex-project.org/lppl/):
-   Copyright 2014 Ingo Gerth
+   Copyright © 2014 Ingo Gerth
   
    This work may be distributed and/or modified under the
    conditions of the LaTeX Project Public License, either version 1.3

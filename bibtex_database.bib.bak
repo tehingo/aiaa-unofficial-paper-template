@@ -1,124 +1,125 @@
-@InCollection{turner:64a,
-  author = 	 {M. J. Turner and H. C. Martin and R. C. Leible},
-  title = 	 {Further Development and Applications of Stiffness Methods},
-  booktitle = 	 {Matrix Methods of Structural Analysis},
-  year = 	 1964,
-  edition =      {1st},
-  publisher =    {Macmillian},
-  address =      {New York},
-  volume =	 1,
-  pages =	 {203-266}
-  }
+% This file was created with JabRef 2.10b2.
+% Encoding: ISO8859_1
+
+
+@Techreport{anon:53,
+  Title                    = {Equations, Tables, and Charts for Compressible Flow},
+  Author                   = {Anon.},
+  Year                     = {1953},
+  Type                     = {NACA Rept.~1135}
+}
+
+@Techreport{bhutta:90cp,
+  Title                    = {Aerothermodynamic Performance of 3-D and Bent-Nose RVs Hypersonic Conditions},
+  Author                   = {B. A. Bhutta and C. H. Lewis},
+  Year                     = {1990},
+  Month                    = aug,
+  Type                     = {AIAA Paper 90--3068}
+}
 
 @Article{bhutta:90jsr,
-  author = 	 {B. A. Bhutta and C. H. Lewis},
-  title = 	 {Large-Angle-of-Attack Vicous Hypersonic Flows over
-                  Complex Lifting Configurations},
-  journal = 	 {Journal of Spacecraft and Rockets},
-  year = 	 1990,
-  volume =	 27,
-  number =	 2,
-  pages =	 {194-204},
-  note =	 {also AIAA Paper 89--0269, Jan. 1989}
+  Title                    = {Large-Angle-of-Attack Vicous Hypersonic Flows over Complex Lifting Configurations},
+  Author                   = {B. A. Bhutta and C. H. Lewis},
+  Year                     = {1990},
+  Note                     = {also AIAA Paper 89--0269, Jan. 1989},
+  Number                   = {2},
+  Pages                    = {194-204},
+  Volume                   = {27},
+
+  Journal                  = {Journal of Spacecraft and Rockets}
 }
 
-@InCollection{blottner:70cp,
-  author = 	 {F. G. Blottner},
-  title = 	 {Prediction of Electron Density in the Boundary Layer
-                  of Entry Vehicles with Ablation},
-  booktitle = 	 {The Entry Plasma Sheath and Its Effects},
-  type =         {NASA SP--252},
-  volume =	 1,
-  year =	 1970,
-  month =	 oct,
-  pages =	 {219--240}
+@Techreport{bhutta:90vra,
+  Title                    = {PNS Predictions of External/Internal Hypersonic Flows for NASP Propulsion Applications},
+  Author                   = {B. A. Bhutta and C. H. Lewis},
+  Institution              = {VRA, Inc.},
+  Year                     = {1990},
+  Month                    = jun,
+  Type                     = {VRA--TR--90--01},
+
+  Address                  = {Blacksburg, VA}
 }
 
-@InProceedings{wirin:90cp,
-  author = 	 {W. B. Wirin},
-  title = 	 {Space Debris 1989},
-  booktitle = 	 {Proceedings of the Thrity-Second Colloquium
-                 on the Law of Outer Space},
-  year =	 1990,
-  publisher =	 {AIAA},
-  address =	 {Wahington, DC},
-  pages =	 {184--196}
+@Incollection{blottner:70cp,
+  Title                    = {Prediction of Electron Density in the Boundary Layer of Entry Vehicles with Ablation},
+  Author                   = {F. G. Blottner},
+  Booktitle                = {The Entry Plasma Sheath and Its Effects},
+  Year                     = {1970},
+  Pages                    = {219--240},
+  Volume                   = {1},
+
+  Month                    = oct,
+  Type                     = {NASA SP--252}
 }
 
-@TechReport{bhutta:90vra,
-  author = 	 {B. A. Bhutta and C. H. Lewis},
-  title = 	 {PNS Predictions of External/Internal Hypersonic Flows
-                  for NASP Propulsion Applications},
-  institution =  {VRA, Inc.},
-  type =         {VRA--TR--90--01},
-  year = 	 1990,
-  address =	 {Blacksburg, VA},
-  month =	 jun
-}
-
-@TechReport{miner:75ncr,
-  author = 	 {E. W. Miner and C. H. Lewis},
-  title = 	 {Hypersonic Ionizing Air Viscous Shock-Layer Flows
-                  over Nonanlytic Blunt Bodies},
-  year = 	 1975,
-  type =	 {NASA CR--2250},
-  month =	 may
-}
-
-@TechReport{bhutta:90cp,
-  author = 	 {B. A. Bhutta and C. H. Lewis},
-  title = 	 {Aerothermodynamic Performance of 3-D and Bent-Nose RVs
-                  Hypersonic Conditions},
-  year = 	 1990,
-  type =	 {AIAA Paper 90--3068},
-  month =	 aug
-}
-
-@InCollection{sutton:85ar,
-  author = 	 {K. Sutton},
-  title = 	 {Air Radiation Revisted},
-  booktitle = 	 {Thermal Design of Aeroassisted Orbital Transfer Vehicles},
-  publisher =	 {AIAA},
-  year =	 1985,
-  editor =	 {H. F. Nelson},
-  volume =	 96,
-  type =	 {Progress in Astronautics and Aeronautics},
-  address =	 {New York},
-  pages =	 {419--441}
-}
-
-@TechReport{anon:53,
-  author = 	 {Anon.},
-  title = 	 {Equations, Tables, and Charts for Compressible Flow},
-  year = 	 1953,
-  type =	 {NACA Rept.~1135}
+@Techreport{miner:75ncr,
+  Title                    = {Hypersonic Ionizing Air Viscous Shock-Layer Flows over Nonanlytic Blunt Bodies},
+  Author                   = {E. W. Miner and C. H. Lewis},
+  Year                     = {1975},
+  Month                    = may,
+  Type                     = {NASA CR--2250}
 }
 
 @Misc{moss:90pc,
-  author =	 {J. N. Moss},
-  howpublished = {private communication,
-                  NASA Langley Research Center,
-                  Hampton, VA},
-  year =	 1990,
-  month =	 jun
+  Author                   = {J. N. Moss},
+  Year                     = {1990},
+  HowPublished             = {private communication, NASA Langley Research Center, Hampton, VA},
+  Month                    = jun
+}
+
+@Incollection{sutton:85ar,
+  Title                    = {Air Radiation Revisted},
+  Author                   = {K. Sutton},
+  Booktitle                = {Thermal Design of Aeroassisted Orbital Transfer Vehicles},
+  Editor                   = {H. F. Nelson},
+  Year                     = {1985},
+  Pages                    = {419--441},
+  Publisher                = {AIAA},
+  Volume                   = {96},
+
+  Address                  = {New York},
+  Type                     = {Progress in Astronautics and Aeronautics}
+}
+
+@Phdthesis{thoman:66phd,
+  Title                    = {Numerical Solutions of Time Dependent Two Dimensional Flow of a Viscous, Incompressible Fluid Over Stationary and Rotating Cylinders},
+  Author                   = {David Charles Thoman},
+  Year                     = {1966},
+  Month                    = aug,
+
+  Address                  = {Indiana},
+  Annote                   = { example of viscous timestep restriction, cell Re },
+  School                   = {University of Notre Dame}
 }
 
 @Book{tufte:83bk,
-  author =	 {Edward R. Tufte},
-  title = 	 {The Visual Display of Quantitative Information},
-  publisher = 	 {Graphics Press},
-  year = 	 1983
+  Title                    = {The Visual Display of Quantitative Information},
+  Author                   = {Edward R. Tufte},
+  Year                     = {1983},
+  Publisher                = {Graphics Press}
 }
 
-@PhdThesis{thoman:66phd,
-  author = 	 {David Charles Thoman},
-  title = 	 {Numerical Solutions of Time Dependent Two Dimensional
-                  Flow of a Viscous, Incompressible Fluid Over
-                  Stationary and Rotating Cylinders},
-  school = 	 {University of Notre Dame},
-  year = 	 1966,
-  address =	 {Indiana},
-  month =	 aug,
-  annote =	 { example of viscous timestep restriction, cell Re }
+@Incollection{turner:64a,
+  Title                    = {Further Development and Applications of Stiffness Methods},
+  Author                   = {M. J. Turner and H. C. Martin and R. C. Leible},
+  Booktitle                = {Matrix Methods of Structural Analysis},
+  Year                     = {1964},
+  Edition                  = {1st},
+  Pages                    = {203-266},
+  Publisher                = {Macmillian},
+  Volume                   = {1},
+
+  Address                  = {New York}
+}
+
+@Inproceedings{wirin:90cp,
+  Title                    = {Space Debris 1989},
+  Author                   = {W. B. Wirin},
+  Booktitle                = {Proceedings of the Thrity-Second Colloquium on the Law of Outer Space},
+  Year                     = {1990},
+  Pages                    = {184--196},
+  Publisher                = {AIAA},
+
+  Address                  = {Wahington, DC}
 }
 

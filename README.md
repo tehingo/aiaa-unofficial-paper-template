@@ -35,7 +35,7 @@ have found main-stream application, they will be incorporated into the template:
 
 
 ## Requirements:
- * A recent LaTeX distribution, such as [TeXLive](http://www.tug.org/texlive/)
+ * A recent LaTeX distribution, such as [TeX Live](http://www.tug.org/texlive/)
 
 
 ## Notice:
@@ -45,7 +45,7 @@ the AIAA submission requirements yourself.
 
 ## License:
 [LaTeX Project Public License](http://latex-project.org/lppl/):
-   Copyright 2014 Ingo Gerth
+   Copyright © 2014 Ingo Gerth
   
    This work may be distributed and/or modified under the
    conditions of the LaTeX Project Public License, either version 1.3
