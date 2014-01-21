@@ -1,10 +1,52 @@
+%---------------------L E G A L    N O T I C E --------------------------------%
+% Preamble.tex
+% Copyright 2014 Ingo Gerth
+%
+% This is file `aiaa-pretty.cls'. It is based off of advanced_example.tex, which
+% was written (c) 2004 by Bil Kleb, Bill Wood, and Erich Knauseberger.
+%
+% Editing this file is perfectly permitted by the distributing author, Ingo
+% Gerth, but changing the name is recommended before making any major changes.
+% 
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status 'maintained'.
+% 
+% The Current Maintainer of this work is Ingo Gerth
+%
+% This work is based on the official AIAA LaTeX template, version 3.6.1.
+% The class aiaa-tc remains completely unchanged.
+% The only changes are: 
+%  * updated and simplified this template file for the body
+%  * added the file Preamble.tex
+%    - Removed obsolete packages
+%    - Added new ones, replaced obsolete ones by more recent packages
+%    - For details, please see the file Preamble.tex that tracks all changes
+%  * Added a few hints here and there
+%
+% Description: LaTeX template for AIAA papers
+% Keywords: LaTeX, template, AIAA
+% Author (Preamble.tex): Ingo Gerth
+% Author (advanced_example.tex): Bil Kleb, Bill Wood, Erich Knausenberger
+% Maintainer: Ingo Gerth
+% Version: 1.1 <21 January 2014>
+%---------------------L E G A L    N O T I C E --------------------------------%
+
+
+
 % ---------------------------------------------------------------------------- %
 %%% Below: original AIAA packages, keeping for compatibility ----------------- %
 %% (IG 2013-11-08: package below is obsolete, replace by cleveref)
 % \usepackage{varioref}%  smart page, figure, table, and equation referencing
 %
 %% (IG 2013-11-08: This is bad practice, do not use)
-\usepackage{wrapfig}%   wrap figures/tables in text (i.e., Di Vinci style)
+% \usepackage{wrapfig}%   wrap figures/tables in text (i.e., Di Vinci style)
 %
 %% (IG 2013-11-08: Unnecessary, just place table in a minipage)
 % \usepackage{threeparttable}% tables with footnotes
@@ -63,69 +105,29 @@
 % -------------- Above: Package additions / replacements with newer packages %%%
 % ---------------------------------------------------------------------------- %
 
-% Automatically import hyphenation exceptions 
-\input{/usr/local/texlive/2013/texmf-dist/tex/generic/hyphenex/ushyphex.tex}
+% Automatically import hyphenation exceptions:
+% - uncomment and adapt to your file path
+% - fixes some hyphenations that babel usually gets wrong
+% \input{/usr/local/texlive/2013/texmf-dist/tex/generic/hyphenex/ushyphex.tex}
 
 % Mark bad boxes despite final option
 % \overfullrule=1mm
 
-% % Abbreviations
+% Abbreviations
 \newcommand\eg{\emph{e.g.}\xspace}
 \newcommand\ie{\emph{i.e.}\xspace}
 \newcommand\wrt{wrt.\xspace}
 \newcommand\com{c.o.m.\xspace}
+
+% New math commands
 \newcommand\const{\text{const.\xspace}}
 \newcommand\minimize{\text{minimize}}
 \providecommand{\abs}[1]{\lvert#1\rvert}
 \providecommand{\norm}[1]{\lVert#1\rVert}
-
-
-%%% Further packages, use only when need ----------------------------------- %%%
-
 \newcommand{\transpose}[1]{\ensuremath{{#1}^{\intercal}}}
 \newcommand{\ed}{\ensuremath{\operatorname{d}}}
 \newcommand{\trans}[1]{\ensuremath{{#1}^{\mathlarger\intercal}}}
-\newcommand{\vecbrack}[1]{\ensuremath{\left\lgroup#1\right\rgroup}}
-\newcommand{\tgo}{\ensuremath{t_{\text{go}}}\xspace}
-\providecommand{\norm}[1]{\lVert#1\rVert}
 
+
+%%% Further packages, use only when need ----------------------------------- %%% 
 % \usepackage{minted} % Code listings with syntax highlighting
-
-% TikZ styles % --------------------------------------------------------------- %%%
-\definecolor{lavender}{RGB}{102,188,170}
-\definecolor{fuchsia}{RGB}{161, 0,88}
-\definecolor{lgreen}{RGB}{173, 198, 16}
-\definecolor{tmp}{RGB}{173, 198, 16}
-\tikzstyle{decisionA} = [diamond, draw, fill=lavender!30, 
-    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
-\tikzstyle{blockA} = [rectangle, draw, fill=tmp!70, 
-    text width=7em, text centered, rounded corners, minimum height=4em]
-\tikzstyle{blocksubA} = [rectangle, draw, fill=tmp!40, 
-    text width=6em, text centered, rounded corners, minimum height=4em]
-\tikzstyle{dataA} = [draw, trapezium, trapezium left angle=70,trapezium right angle=-70, fill=fuchsia!50, node distance=3cm,
-    minimum height=2em]
-\tikzstyle{datainA} = [draw, trapezium, trapezium left angle=70,trapezium right angle=-70, fill=fuchsia!30, node distance=3cm,
-    minimum height=2em]
-\tikzstyle{startstopA} = [rectangle, draw, fill=lgreen!70, 
-    text width=3em, text centered, rounded corners, minimum height=2em]
-\tikzstyle{block} = [rectangle, draw, fill=tmp!80, 
-    text width=5em, text centered,  minimum height=4em]
-\tikzstyle{blocksmall} = [rectangle, draw, fill=tmp!80, 
-    text width=5em, text centered,  minimum height=2em]
-\tikzstyle{blockbig} = [rectangle, draw, fill=tmp!20, 
-    text width=25em, text centered, minimum height=3em]
-\tikzstyle{line} = [draw, -latex']
-\tikzstyle{mylabel}=[text width=12em, text centered] 
-%%
-\definecolor{tmp}{RGB}{173, 198, 16}
-\tikzstyle{block} = [rectangle, draw, fill=tmp!80, 
-    text width=5em, text centered,  minimum height=4em]
-\tikzstyle{arrow} = [draw, -latex', ->, line width=1pt]
-\newcommand\centerofmass{%
-    \tikz[radius=0.4em,] {%
-        \draw[fill=white] (0,0) circle;%
-        \fill (0,0) -- ++(0.4em,0) arc [start angle=0,end angle=90] --%
-        ++(0,-0.8em) arc [start angle=270, end angle=180];%
-        \draw (0,0) circle;%
-    }%
-}

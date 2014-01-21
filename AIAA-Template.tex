@@ -1,18 +1,63 @@
+%---------------------L E G A L    N O T I C E --------------------------------%
+% AIAA-Template.tex
+% Copyright 2014 Ingo Gerth
+%
+% This is file 'AIAA-Template.tex'. It is based off of advanced_example.tex, which
+% was written (c) 2004 by Bil Kleb, Bill Wood, and Erich Knauseberger.
+%
+% Editing this file is perfectly permitted by the distributing author, Ingo
+% Gerth, but changing the name is recommended before making any major changes.
+% 
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status 'maintained'.
+% 
+% The Current Maintainer of this work is Ingo Gerth
+%
+% This work is based on the official AIAA LaTeX template, version 3.6.1.
+% The class aiaa-tc remains completely unchanged.
+% The only changes are: 
+%  * updated and simplified this template file for the body
+%  * added the file Preamble.tex
+%    - Removed obsolete packages
+%    - Added new ones, replaced obsolete ones by more recent packages
+%    - For details, please see the file Preamble.tex that tracks all changes
+%  * Added a few hints here and there
+%
+% Description: LaTeX template for AIAA papers
+% Keywords: LaTeX, template, AIAA
+% Author (AIAA-template.tex): Ingo Gerth
+% Author (advanced_example.tex): Bil Kleb, Bill Wood, Erich Knausenberger
+% Maintainer: Ingo Gerth
+% Version: 1.1 <21 January 2014>
+%---------------------L E G A L    N O T I C E --------------------------------%
+%
+%
+%
+%---------------------T E M P L A T E -----------------------------------------%
 %%%% Draft paper %%%%
 % Title:
 %  - (...)
 %
 % Authors: 
-%  - Ingo Gerth (template author)
+%  - (...)
+%  - Ingo Gerth (template author)   (remove this)
 %
 % Contact: 
-%  - ingo@gerth-ac.de, (...)
+%  - (...)
+%  - ingo@gerth-ac.de    (remove this)
 %
 % VCS repository:
 %  - (if applicable)
 %
 % Compiling:
-%  - Make sure the files are encoded as UTF8
+%  - Recommendation: make sure the files are encoded as UTF8
 %  - Use pdflatex for compiling,
 %    bibtex for bibliography, makeindex for nomenclature
 %  - Note: If you know what you are doing, preferably use lualatex as compiler
@@ -20,7 +65,7 @@
 %    the author.
 %
 % To execute AIAA old-school nomenclature run:
-%  - makeindex -s nomencl.ist -o advanced_example.gls advanced_example.glo
+%  - makeindex -s nomencl.ist -o AIAA-Template.gls AIAA-Template.glo
 %
 % General note:
 %  - Original AIAA template is *very* out-dated. Updated with recent packages
@@ -38,16 +83,15 @@
 \title{Your Title}
 
 \author{
- Ingo Gerth\thanks{%
-     Graduate student, Section of Astrodynamics and
-     Space Missions. AIAA student member.%
+ Author One\thanks{%
+     Graduate student, Section of Aerospace Control Systems. AIAA student member.%
      % Intern at ESA ESTEC, D/HSO-IL (Lunar Lander Office). 
      %
  }
- \ and Erwin Mooij\thanks{Assistant professor, Section of Astrodynamics and Space Missions. Associate
+ \ and Author Two\thanks{Assistant professor, Section of Satellite Navigation. Associate
      Fellow, AIAA.}\\
  {\normalsize\itshape
-  Delft University of Technology, Delft, The Netherlands, 2629\,HS}
+  A University, Exampletown, The Netherlands, 4321\,AB}
 }
 
 \AIAAsubmitinfo{PAPER TITLE, AUTHOR LAST NAME and CO-AUTHOR LAST NAME}
@@ -67,6 +111,8 @@
 \begin{document}
 
 %% AIAA style guidelines
+%%  - Taken from file 'author_guide.pdf', part of aiaa-3.6.tar.gz
+%%  - See: ~/Original files, AIAA Template v3.6.1/releases/aiaa-3.6.tar.gz
 
 % Notations (see author_guide.pdf)
 % --------------------------------
@@ -109,13 +155,13 @@
 beginnings of sections. Units work like this \SI{13.3}{km}, unit-less numbers
 like this \num{12991.91241} or this \num{1.098118e-8}, and angles like this
 \ang{1.781}. Put citations only after dots or commas, like
-this.\cite{Acikmese2008}
+this.\cite{wirin:90cp}
 
 
 \section{Conclusions and Future Work}
 
 This should get you started. When using in-line citations use
-Ref.~\citen{Acikmese2008}. Note that the tilde $\sim$ is used as protected
+Ref.~\citen{wirin:90cp}. Note that the tilde $\sim$ is used as protected
 space.
 
 
