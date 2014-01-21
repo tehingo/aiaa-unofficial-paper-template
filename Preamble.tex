@@ -1,0 +1,131 @@
+% ---------------------------------------------------------------------------- %
+%%% Below: original AIAA packages, keeping for compatibility ----------------- %
+%% (IG 2013-11-08: package below is obsolete, replace by cleveref)
+% \usepackage{varioref}%  smart page, figure, table, and equation referencing
+%
+%% (IG 2013-11-08: This is bad practice, do not use)
+\usepackage{wrapfig}%   wrap figures/tables in text (i.e., Di Vinci style)
+%
+%% (IG 2013-11-08: Unnecessary, just place table in a minipage)
+% \usepackage{threeparttable}% tables with footnotes
+%
+%% (IG 2013-11-08: obsolete package, use siunitx S column type)
+% \usepackage{dcolumn}%   decimal-aligned tabular math columns
+%  \newcolumntype{d}{D{.}{.}{-1}}
+%
+%% (IG 2013-11-08: obsolete package, consider using glossaries instead)
+\usepackage{nomencl}%   nomenclature generation via makeindex
+ \makeindex
+ \makenomenclature
+%
+%% (IG 2013-11-08: obsolete package, use successor subfig)
+% \usepackage{subfigure}% subcaptions for subfigures
+% \usepackage{subfigmat}% matrices of similar subfigures, aka small mulitples
+%
+%% (IG 2013-11-08: package obsolete, use lettrine)
+% \usepackage[dvips]{dropping}% alternative dropped capital package
+%
+%% (IG 2013-11-08: below is unchanged, packages are good)
+\usepackage[colorlinks]{hyperref}%  hyperlinks [must be loaded after dropping]
+\usepackage[american]{babel}
+\usepackage{fancyvrb}%  extended verbatim environments
+ \fvset{fontsize=\footnotesize,xleftmargin=2em}
+\usepackage{lettrine}%  dropped capital letter at beginning of paragraph
+% ----------------- above: original AIAA packages, keeping for compatibility %%%
+% ---------------------------------------------------------------------------- %
+
+
+% ---------------------------------------------------------------------------- %
+%%% Below: Package additions / replacements with newer packages -------------- %
+\usepackage{fontspec} % needed for running the lualatex compiler
+\usepackage{xspace} % to get the spacing after macros right  
+\usepackage{mparhack} % get marginpar right
+\usepackage{fixltx2e} % fixes some LaTeX stuff 
+\usepackage{microtype} % Microtypographic enhancements
+\usepackage[english]{selnolig} % Suppress bad ligatures
+\usepackage{siunitx} % Proper unity typesetting
+    \sisetup{exponent-product=\cdot, per-mode=symbol} % get / instead of ^{-1}
+\usepackage{amsmath,amsfonts,amssymb} % Primary math packages
+\usepackage{mathtools} % Important math fixes and extensions
+\usepackage{lualatex-math} % Math fixes for LuaLaTeX compiler
+\usepackage{etoolbox} % Needed to write new commands properly
+\usepackage{xargs} % idem
+\usepackage{xparse} % idem
+\usepackage[bottom]{footmisc} % Avoid that figures show up *below* footnotes
+\usepackage{subfig} % Replacement for subfigure
+\usepackage{booktabs} % Publication-quality tables
+\usepackage{pgfplots} % Publication-quality plots
+    \pgfplotsset{compat=1.9}
+\usepackage{tikz} % Program vector drawings
+    \usetikzlibrary{calc,decorations.pathreplacing,shapes,arrows,positioning,shadows,patterns}
+    \pgfdeclarelayer{bg}    % declare background layer
+    \pgfsetlayers{bg,main}  % set the order of the layers (main is the standard layer)
+% -------------- Above: Package additions / replacements with newer packages %%%
+% ---------------------------------------------------------------------------- %
+
+% Automatically import hyphenation exceptions 
+\input{/usr/local/texlive/2013/texmf-dist/tex/generic/hyphenex/ushyphex.tex}
+
+% Mark bad boxes despite final option
+% \overfullrule=1mm
+
+% % Abbreviations
+\newcommand\eg{\emph{e.g.}\xspace}
+\newcommand\ie{\emph{i.e.}\xspace}
+\newcommand\wrt{wrt.\xspace}
+\newcommand\com{c.o.m.\xspace}
+\newcommand\const{\text{const.\xspace}}
+\newcommand\minimize{\text{minimize}}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+
+
+%%% Further packages, use only when need ----------------------------------- %%%
+
+\newcommand{\transpose}[1]{\ensuremath{{#1}^{\intercal}}}
+\newcommand{\ed}{\ensuremath{\operatorname{d}}}
+\newcommand{\trans}[1]{\ensuremath{{#1}^{\mathlarger\intercal}}}
+\newcommand{\vecbrack}[1]{\ensuremath{\left\lgroup#1\right\rgroup}}
+\newcommand{\tgo}{\ensuremath{t_{\text{go}}}\xspace}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+
+% \usepackage{minted} % Code listings with syntax highlighting
+
+% TikZ styles % --------------------------------------------------------------- %%%
+\definecolor{lavender}{RGB}{102,188,170}
+\definecolor{fuchsia}{RGB}{161, 0,88}
+\definecolor{lgreen}{RGB}{173, 198, 16}
+\definecolor{tmp}{RGB}{173, 198, 16}
+\tikzstyle{decisionA} = [diamond, draw, fill=lavender!30, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{blockA} = [rectangle, draw, fill=tmp!70, 
+    text width=7em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{blocksubA} = [rectangle, draw, fill=tmp!40, 
+    text width=6em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{dataA} = [draw, trapezium, trapezium left angle=70,trapezium right angle=-70, fill=fuchsia!50, node distance=3cm,
+    minimum height=2em]
+\tikzstyle{datainA} = [draw, trapezium, trapezium left angle=70,trapezium right angle=-70, fill=fuchsia!30, node distance=3cm,
+    minimum height=2em]
+\tikzstyle{startstopA} = [rectangle, draw, fill=lgreen!70, 
+    text width=3em, text centered, rounded corners, minimum height=2em]
+\tikzstyle{block} = [rectangle, draw, fill=tmp!80, 
+    text width=5em, text centered,  minimum height=4em]
+\tikzstyle{blocksmall} = [rectangle, draw, fill=tmp!80, 
+    text width=5em, text centered,  minimum height=2em]
+\tikzstyle{blockbig} = [rectangle, draw, fill=tmp!20, 
+    text width=25em, text centered, minimum height=3em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{mylabel}=[text width=12em, text centered] 
+%%
+\definecolor{tmp}{RGB}{173, 198, 16}
+\tikzstyle{block} = [rectangle, draw, fill=tmp!80, 
+    text width=5em, text centered,  minimum height=4em]
+\tikzstyle{arrow} = [draw, -latex', ->, line width=1pt]
+\newcommand\centerofmass{%
+    \tikz[radius=0.4em,] {%
+        \draw[fill=white] (0,0) circle;%
+        \fill (0,0) -- ++(0.4em,0) arc [start angle=0,end angle=90] --%
+        ++(0,-0.8em) arc [start angle=270, end angle=180];%
+        \draw (0,0) circle;%
+    }%
+}
